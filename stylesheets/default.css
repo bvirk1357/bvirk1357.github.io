@@ -1,0 +1,86 @@
+div {
+  text-align: center;
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+body {
+  background-color: #2FAFCB;
+}
+
+img {
+  height: 100%;
+}
+
+#MOTO {
+  background-color: #ADE8FF;
+  height: 10%;
+}
+
+span {
+  display: inline-block;
+  width:20%;
+  margin-top: 2%;
+}
+
+#PROFILE {
+  text-align: left;
+  height: 30%;
+}
+
+#profile_pic{
+  display: inline;
+  height: 80%;
+  padding: 2%;
+}
+
+#skills {
+  background-color: #9DE7E8;
+  display: inline-block;
+  position: absolute;
+  width: 70%;
+  height: 28%;
+  text-align: center;
+  margin: 0px;
+}
+
+#PROJECTS {
+  text-align: left;
+  background-color: #BAFFED;
+  height: 30%;
+  vertical-align: middle;
+}
+
+#INFO {
+  background-color: #9DE8BF;
+  height: 20%;
+  font-size: 1em;
+  display: block;
+}
+
+div div {
+  background-color: #ADFFBB;
+  text-align: center;
+  width: 20%;
+}
+
+#INFO div {
+  margin: 1em;
+  display: inline-block;
+  height: 50%;
+}
+
+#blog_status{
+  width:40%;
+}
+
+
+#project_title {
+  height: 100%;
+  vertical-align: center;
+  text-align: center;
+  left:0px;
+  top: 0px;
+}
+
+

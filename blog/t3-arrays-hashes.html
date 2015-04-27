@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays & Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Week3 post</h1>
+  <h4>4.26.15</h4>
+
+  <section>
+    <h2><b>Arrays</b></h2>
+    <p>
+      We deal with lists of different things in everyday life. For example, a grocery list. Imagine that you have come back home from the grocery store and the store receipt lists all the items that you bought with each item's price. But, for some reason, the total price is not there.....
+    </p>
+    <p>
+      Most people would like to know if what they paid for the total was right or not, to check if they got over charged. The person at this point would simply add up the prices of each item for the total cost. This is doable for 3 items. Now imagine having bought 100 items. How much time would you have spend now?
+    </p>
+    <p>
+      This is why we want to use computers to do these repetetive tasks for us. One would create a small program that would add all these 100 prices up. But, how does the computer think of the grocery store receipt? How does it list the items and their prices? The answer is an ARRAY. Array is a list of items or values. For example, lets assume that our grocery store receipt has three items, milk, sugar and bread with prices $1.00, $2.00 and $3.00 respectively.
+      The computer would create two lists or as it calls them, arrays. The programmer can choose the array names like 'ItemNames' and 'ItemPrices'.
+      ItemNames would contain the list "Milk", "Sugar" and "Bread".
+      ItemPrices would containt the list "1.00", "2.00" and "3.00".
+      Finally, the programmer will write some code to go through each item's price and keeps adding the prices as they come to get the total price of $6.00.
+    </p>
+    <p>
+      More specifically, how would the code refer to each item in the array? This is done by adding the item number in front if the array name, like ItemNames[0] will give "Milk" and ItemPrices[1] will give "2.00". Do note that the numbering actually starts at '0' and not '1'. So, a list of three items can be referenced with indices [0], [1], and [2]. Check out the sample code below how this is done.
+
+      </br>
+      </br>
+      ItemNames = ("Milk", "Sugar", "Bread")
+      </br>
+      ItemPrices = ("1.00", "2.00", "3.00")
+      </br>
+      TotalCost = ItemPrices[0] + ItemPrices[1] + ItemPrices[2]
+      </br>
+      </br>
+      TotalCost in the code above is now equal to "6.00". You can also imagine how this can be extended to add the 100 prices as well. For now, do not worry about writing out each ItemPrice's index, there are ways to go over every item of an array with something called loops, which can be covered another time.
+
+    </p>
+
+
+    <h2><b>Hashes</b></h2>
+
+    <p>
+      You might have noticed in the description above where we went over Arrays, the actual names of the items was not important. Infact, we created the array ItemNames, but never used it. The reason is that we were applying the same operation to all the items, i.e., we were adding their prices. This worked for us to get the total cost.</br>Now, what if we only wanted the total cost of items that actually get used together, for example, I would add some sugar in my milk before drinking it. So, these are related somehow and I want to find out the total cost of buying these two items, which would be $1.00 + $2.00 = $3.00.
+    </p>
+    <p>
+      But, how would one do this is on a computer with some code? Would I have to first start checking at which indices in ItemNames do "Milk" and "Sugar" sit and then go to ItemPrices to find out their prices to add them? Sounds a bit combursome. For this, we have another computer structure called HASH. In a hash, we do not list a single value at each index, but put in pairs. Specifically, we put in pair of a 'Key' that refers to a 'Value'. In our case, a pair would be "Milk" => "$1.00".
+    </p>
+    <p>
+      This allows us to work with one structure instead of two arrays and in that same structure, the hash, we can check the name of an item before adding it's price. Check out some code below to see how this would work.
+      </br>
+      </br>
+
+      GroceryHash = {"Milk" => "$1.00", "Sugar" => "$2.00", "Bread" => "$3.00"}
+      </br>
+      TotalCost = $0.00</br>
+      if GroceryHash[0].key == "Milk" then add to TotalCost</br>
+      if GroceryHash[1].key == "Milk" then add to TotalCost</br>
+      if GroceryHash[2].key == "Milk" then add to TotalCost</br>
+      if GroceryHash[0].key == "Sugar" then add to TotalCost</br>
+      if GroceryHash[1].key == "Sugar" then add to TotalCost</br>
+      if GroceryHash[2].key == "Sugar" then add to TotalCost</br>
+    </p>
+    <p>
+      Hence, you want to use a HASH instead of an ARRAY when before applying an operation to the value at each entry in the list, you want to check something about it's name or some other property.
+    </p>
+
+  </section>
+</main>
