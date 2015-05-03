@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerable Methods</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Week4 post</h1>
+  <h4>4.30.15</h4>
+
+  <section>
+    <h2><b>Enumerator#group_by</b></h2>
+    <p>
+      Lets say we have a problem to solve about car horse power. We are given a list of horsepower numbers. We then want to put the cars in different "power" buckets where each bucket contains horsepower values in certain range. The buckets for example could be: 0-100,101-200,......
+      </br>
+      This is where an enumerable's group_by method can be used. For our problem, we can perform an operation on every element of our array and as a different result to this hash is received, a different bucket is chosen to put the element in.
+      </br>
+      Take a look at the sample code below:
+      </br> </br>
+      irb(main):001:0> array=[50,110,70,250]</br>
+      => [50, 110, 70, 250]</br>
+      irb(main):002:0> array</br>
+      => [50, 110, 70, 250]</br>
+      irb(main):003:0> array.group_by{|i| i/100}</br>
+      => {0=>[50, 70], 1=>[110], 2=>[250]}</br>
+      </br> </br>
+      In this method, we called group_by on our array and grouped the elements by matching the ones that give the same result when divided by 100. Note that dividing by 100 here only returns the integer value. For example, '50' and '70' matched because both resulted in '0'.
+
+    </p>
+
+  </section>
+</main>
