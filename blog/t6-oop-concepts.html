@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Variable Scope</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Week6</h1>
+  <h4>5.21.15</h4>
+
+  <section>
+    <h2><b>Types of Variables</b></h2>
+    <p>
+      <ol>
+        <li>Global Variables</li>
+        <li>Instance Variables</li>
+        <li>Local Variables</li>
+        <li>Constant Variables</li>
+        <li>Class Variable</li>
+      </ol>
+    </p>
+
+    <h3><b>Global Variables</b></h3>
+    <p>
+      As the name suggests, these variables are accessible anywhere in a program, in any class, in any loop... anywhere. Because they dont have any limits to where they can be accessed, there use is not recommended. Their name have to start with a '$'
+      </br>E.g.: $global_variable
+    </p>
+
+    <h3><b>Instance Variables</b></h3>
+    <p>
+      Variables declared inside a class definition with a '@' are accessible anywhere in an instance of that class. Note that two instances of that same class will have seperate copies of the instance variable
+      </br>E.g.: @instance_variable
+    </p>
+
+    <h3><b>Local Variables</b></h3>
+    <p>
+      Local variables exist within the method or loop where they are declared.
+      Their names should start either with a lower case or underscore
+      </br>E.g.: local_variable, _LocalVariable
+    </p>
+
+    <h3><b>Constant Variables</b></h3>
+    <p>
+      Constant values in a class are accessible anywhere in a class.
+    </p>
+
+    <h3><b>Class Variables</b></h3>
+    <p>
+      These variables can be considered to have the next level of scope compared to Instance variables because, they are shared by all instances of a class. This allows multiple instances of a class communicate to each other. Their names start with a '@@'
+      </br>E.g.: @@class_variable
+    </p>
+
+
+  </section>
+</main>
