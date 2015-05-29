@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="cheat-sheet.css"/>
+  <title></title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<header>RUBY Enumerables Cheat Sheet</header>
+
+  <aside>
+    <p>Map</p>
+    <p>Min</p>
+    <p>Max</p>
+    <p>Sort</p>
+  </aside>
+
+  <section id="map">
+      <h3>Map</h3>
+      <article id="map_desc">Returns a new array with the results of running block once for every element in enum. If no block is given, an enumerator is returned instead.</article>
+      <article class="code"><p>(1..4).map { |i| i*i }</p>
+          <p>#=> [1, 4, 9, 16]</p>
+      </article>
+      <article class="code">
+          <p>try your code here!</p>
+      </article>
+  </section>
+  <section id="min">
+      <h3>Min</h3>
+      <article id="min_desc">Returns the object in enum with the minimum value. The first form assumes all objects implement Comparable; the second uses the block to return a <=> b.</article>
+      <article class="code"><p>a = %w(albatross dog horse)</p>
+          <p>a.min</p>
+          <p>#=> "albatross"</p>
+          <p>a.min { |a, b| a.length <=> b.length }</p>
+          <p>#=> "dog"</p>
+      </article>
+      <article class="code">
+          <p>try your code here!</p>
+      </article>
+  </section>
+  <section id="max">
+      <h3>Max</h3>
+      <article id="max_desc">Returns the object in enum with the minimum value. The first form assumes all objects implement Comparable; the second uses the block to return a <=> b.</article>
+      <article class="code"><p>a = %w(albatross dog horse)</p>
+          <p>a.min</p>
+          <p>#=> "albatross"</p>
+          <p>a.min { |a, b| a.length <=> b.length }</p>
+          <p>#=> "dog"</p>
+      </article>
+      <article class="code">
+          <p>try your code here!</p>
+      </article>
+   </section>
+   <section id="sort">
+      <h3>Sort</h3>
+      <article id="sort_desc">Returns an array containing the items in enum sorted, either according to their own <=> method, or by using the results of the supplied block. The block should return -1, 0, or +1 depending on the comparison between a and b. As of Ruby 1.8, the method Enumerable#sort_by implements a built-in Schwartzian Transform, useful when key computation or comparison is expensive.</article>
+      <article class="code"><p>a = %w(albatross dog horse)</p>
+          <p>a.min</p>
+          <p>#=> "albatross"</p>
+          <p>a.min { |a, b| a.length <=> b.length }</p>
+          <p>#=> "dog"</p>
+      </article>
+      <article class="code">
+          <p>try your code here!</p>
+      </article>
+   </section>
+
+</body>
